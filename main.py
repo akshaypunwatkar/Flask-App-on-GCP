@@ -23,10 +23,10 @@ def index():
 def get_tweets():
     # initializing the twitter credentials
 
-    consumer_key = "6zFHYk0kuvV4oAO2QHt4xPB6O"
-    consumer_secret = "MnXgqENws4NqjMra4kN8TGabnctFHFuN2fWrDUy0DIu8fXbw38"
-    access_key = "96082570-JF5kqoxG9CrWBU7ih7qrRICS4EdCsDXDLtceThZwn"
-    access_secret = "kjeq99n4YABIfci9pns2P6IOx8pKXIFpOqDnfGuwsfknY"
+    consumer_key = "Your Consumer Key"
+    consumer_secret = "Your Consumer Secret"
+    access_key = "Your access key"
+    access_secret = "Your access secret"
 
     # authorize twitter, initialize tweepy
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
