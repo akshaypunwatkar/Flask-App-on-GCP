@@ -74,7 +74,7 @@ def get_tweets():
         ax1 = fig.add_subplot(2, 1, 1)
         ax1.imshow(wc, interpolation="bilinear")
         ax1.axis("off")
-        ax1.set_title("\nWordcloud of all text in recent tweets\n", fontsize=15)
+        ax1.set_title("\nWordcloud of recent tweets\n", fontsize=15)
 
         # Generating wordcloud for the hashtags
         hashtags_string = ' '.join(all_hashtags)
