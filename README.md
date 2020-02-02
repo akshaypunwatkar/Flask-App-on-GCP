@@ -1,11 +1,13 @@
-# Wordcloud generator for Twitter user
+# Continous delivery Wordcloud generator for Twitter users Flask App on GCP
 
-This project is an implementation of a simple python flask application on Google Cloud Platform (GCP).
+This project is an implementation of a Continous delivery Flask application on Google Cloud Platform (GCP).
 The application can be accessed on this link :  https://carbide-acre-266720.appspot.com
 
 ## Getting Started
 
 The application uses Flask in python for interacting with HTML pages of an application. Using the twitter userId as input, the app makes a call to twitter using the tweepy library and request the users timeline (tweets posted by the user). The maximum number of tweets which can be retrieved is 3200. However, the number of tweets could be less. The received tweets are processed using tweet-preprocessor, which is a library to process tweets. Hashtags and User mentions are extracted from the tweets using regualr expression. The text from tweets, hashtags, and user metions are used to generate wordclouds. The wordcloud response is then sent over via flask on the html web page.
+
+For the purpose of continous delivery, Cloud Build on Google Cloud Platform (GCP) is used. The deployment is trigerred whenver a push is made on the the repository. 
 
 ## Prerequisites
 
@@ -27,7 +29,8 @@ The only prerequisite for this projects are the **Twitter developer credentials*
 > Wordcloud :  https://pypi.org/project/wordcloud/    
 > Tweepy : http://docs.tweepy.org/en/v3.5.0/api.html    
 > Tweet-preprocessor : https://pypi.org/project/tweet-preprocessor/    
-> Google App Engine : https://cloud.google.com/appengine/docs/flexible/python/quickstart
+> Google App Engine : https://cloud.google.com/appengine/docs/flexible/python/quickstart   
+> Cloud Build : https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories   
 
 # Authors
 
