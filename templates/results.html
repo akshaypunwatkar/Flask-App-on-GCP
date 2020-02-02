@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body style="background-color:rgb(0, 172, 238);">
+
+	<header>
+		<div class="container">
+		    <div id="brandname">
+			    Flask app on GCP for Twitter
+		    </div>
+		    <h1 style="font-size:40px;font-family:verdana;text-align:center;">Word cloud generator for Twitter users</h1>
+            <hr>
+	    </div>
+	</header>
+
+    <div style="text-align: center; border: 1px solid">
+		<p style="font-size:20px;font-family:verdana;text-align:center;">Twitter user name:</p>
+
+        <p style="font-size:20px;font-family:verdana;text-align:center;">{{userId}}</p>
+
+        <hr>
+	</div>
+    
+    <div style="text-align: center; border: 1px solid" class="container">
+	    <img src="{{ image }}" alt="my plot" style="width:auto;"!>
+	</div>
+
+</body>
+</html>

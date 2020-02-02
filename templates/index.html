@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter WordCloud</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body style="background-color:rgb(0, 172, 238);"> 
+
+	<header>
+		<div class="container">
+		    <div id="brandname">
+			    Flask app on GCP for Twitter
+		    </div>
+		    <h1 style="font-size:40px;font-family:verdana;text-align:center;">Word cloud generator for Twitter users</h1>
+            <hr>
+		
+	    </div>
+	</header>
+	<div style="text-align: center; border: 1px solid">
+
+		<form action="{{ url_for('get_tweets')}}" method="POST">
+		<p style="font-size:20px;font-family:verdana;text-align:center;">Enter the twitter user name below:</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="userid" rows="2" cols="20"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="Generate Wordclouds" style="font-family:verdana;text-align:center;">
+		
+	    </form>
+		
+	</div>
+    <hr>
+
+	
+
+</body>
+</html>
