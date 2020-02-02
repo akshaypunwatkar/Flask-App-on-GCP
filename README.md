@@ -5,7 +5,7 @@ The application can be accessed on this link :  https://carbide-acre-266720.apps
 
 ## Getting Started
 
-The application uses Flask in python for interacting with HTML pages of an application. Using the twitter userId as input, the app makes a call to twitter using the tweepy library and request the users timeline (tweets posted by the user). The maximum number of tweets which can be retrieved is 3200. However, the number of tweets could be less. The received tweets are processed using tweet-preprocessor, which is a library to process tweets. Hashtags and User mentions are extracted from the tweets using regualr expression. The text from tweets, hashtags, and user metions are used to generate wordclouds. The wordcloud response is then sent over via flask on the html web page.
+The application uses Flask in python for interacting with HTML pages of the application. Using the Twitter *userId* as a input, the app makes a call to Twitter using the tweepy library and request the users timeline (tweets posted by the user). The maximum number of tweets which can be retrieved is 3200. However, the number of tweets could be less. The received tweets are processed using tweet-preprocessor, which is a library to process tweets. Hashtags and User mentions are extracted from the tweets using regualr expression. The text from tweets, hashtags, and user metions are used to generate wordclouds. The wordcloud response is then sent over via flask on the html web page.
 
 For the purpose of continous delivery, Cloud Build on Google Cloud Platform (GCP) is used. The deployment is trigerred whenver a push is made on the the repository. 
 
